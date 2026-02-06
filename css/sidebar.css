@@ -1,0 +1,30 @@
+.sidebar-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.sidebar-link .indicator {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: 4px;
+  background: linear-gradient(to bottom, #6366f1, #8b5cf6);
+  border-radius: 0 4px 4px 0;
+  opacity: 0;
+  transform: scaleY(0.3);
+  transition: all 0.3s ease;
+  pointer-events: none; /* 👈 importante */
+}
+
+.sidebar-link:hover .indicator,
+.sidebar-link.bg-gray-700\/50 .indicator {
+  opacity: 1;
+  transform: scaleY(1);
+}
