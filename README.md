@@ -1,3 +1,9 @@
+![PHP](https://img.shields.io/badge/PHP-8-blue)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-UI-blue)
+![Status](https://img.shields.io/badge/Status-In_Development-yellow)
+
+
 # 🔐 User System — Modern Authentication System (en desarrollo)
 
 Sistema completo de autenticación y gestión de usuarios desarrollado con **PHP, MySQL y Tailwind CSS**, enfocado en seguridad, diseño moderno y buenas prácticas de desarrollo web.
@@ -75,16 +81,6 @@ Este proyecto simula un sistema real de producción para dashboards administrati
 
 
 ---
-
-# 🧨 
-
-Arriba del README:
-
-```markdown
-![PHP](https://img.shields.io/badge/PHP-8-blue)
-![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-UI-blue)
-![Status](https://img.shields.io/badge/Status-In_Development-yellow)
 
 
 ## 📈 Hoja de ruta
