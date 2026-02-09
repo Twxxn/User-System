@@ -57,29 +57,31 @@ Este proyecto simula un sistema real de producción para dashboards administrati
 ## 🧩 Estructura del Proyecto
 
 /user_system
+```bash
+/user_system
 │── index.php
 │── login.php
 │── register.php
 │── dashboard.php
 │
 ├── includes/
-│ ├── conexion.php
-│ ├── login.php
-│ ├── registrar_usuario.php
-│ ├── subir_foto.php
+│   ├── conexion.php
+│   ├── login.php
+│   ├── registrar_usuario.php
+│   ├── subir_foto.php
 │
 ├── css/
-│ ├── auth.css
-│ ├── sidebar.css
+│   ├── auth.css
+│   ├── sidebar.css
 │
 ├── uploads/
-│ └── perfiles/
+│   └── perfiles/
 │
 └── admin/
-└── usuarios.php
+    └── usuarios.php
 
+```
 
----
 
 ## 👨‍💻 Autor
 
