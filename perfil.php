@@ -78,11 +78,15 @@ $usuario = $stmt->get_result()->fetch_assoc();
         <h3 class="text-lg font-bold mb-4">Actualizar foto</h3>
 
         <form action="includes/subir_foto.php" method="POST" enctype="multipart/form-data">
-            <input type="file"
-                name="imagen"
-                accept="image/*"
-                required
-                class="mb-4 block w-full text-sm">
+            <input type="file" 
+                    name="imagen" 
+                    accept="image/*" 
+                    required 
+                    onchange="previewImagen(event)"
+                    class="mb-4 block w-full text-sm">
+
+            <img id="preview" class="w-32 h-32 rounded-full hidden mx-auto object-cover border border-gray-600">
+
 
             <div class="flex justify-end gap-2">
                 <button type="button"
@@ -98,7 +102,19 @@ $usuario = $stmt->get_result()->fetch_assoc();
             </div>
         </form>
     </div>
+    
 </div>
+<script>
+function previewImagen(event) {
+    const reader = new FileReader();
+    reader.onload = function() {
+        const img = document.getElementById("preview");
+        img.src = reader.result;
+        img.classList.remove("hidden");
+    }
+    reader.readAsDataURL(event.target.files[0]);
+}
+</script>
 
 
 </main>

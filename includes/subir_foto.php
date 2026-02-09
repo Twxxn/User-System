@@ -49,6 +49,7 @@ $sql = "UPDATE usuarios SET imagen = ? WHERE id = ?";
 $stmt = $conexion->prepare($sql);
 $stmt->bind_param("si", $nuevoNombre, $id);
 $stmt->execute();
+$_SESSION["imagen"] = $nuevoNombre; //actualiza la imagen en la sesion
 
 // Volver al perfil
 header("Location: ../perfil.php");

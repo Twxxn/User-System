@@ -1,0 +1,74 @@
+/* Mensajes de error */
+.error-msg {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  color: #ff4d4d;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+  animation: shake 0.3s ease;
+}
+
+/* Animación de error */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Input con icono de ojo */
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #999;
+    transition: 0.3s;
+}
+
+.toggle-password:hover {
+    color: #00c6ff;
+}
+
+/* Mensajes de contraseña */
+.password-ok {
+    color: #00ff88;
+}
+
+.password-error {
+    color: #ff4d4d;
+}
+
+<script>
+gsap.from(".bg-white\\/10", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power3.out"
+});
+
+gsap.from("h2, form > div, button", {
+    opacity: 0,
+    y: 20,
+    duration: 0.6,
+    stagger: 0.1,
+    delay: 0.3
+});
+</script>
+
