@@ -79,8 +79,15 @@ Este proyecto simula un sistema real de producción para dashboards administrati
 └── usuarios.php
 
 
-
 ---
+
+## 👨‍💻 Autor
+
+**Antonio Izamael Mendoza**  
+Ingeniería en Sistemas Computacionales 🇲🇽  
+
+> Proyecto personal para portafolio profesional.
+
 
 
 ## 📈 Hoja de ruta
